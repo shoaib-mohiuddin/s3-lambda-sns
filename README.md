@@ -9,7 +9,7 @@
   * Format the response message as follows:  
     ```
     The word count in the file <textFileName> is nnn.  
-    ```  
+    ```
     Replace *textFileName* with the name of the file.
   * Specify the email subject line as: *Word Count Result*
   * Automatically trigger the function when the text file is uploaded to an **Amazon S3 bucket**.

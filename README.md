@@ -6,8 +6,8 @@
     its required resources.
   * Report the word count in an *email* using an **Amazon Simple Notification Service (SNS)**
     topic. Optionally, also send the result in an *SMS (text)* message.
-  * Format the response message as follows:  
-        `The word count in the file <textFileName> is nnn.`  
+  * Format the response message as follows:<br/>
+        `The word count in the file <textFileName> is nnn.`<br/>
     Replace *textFileName* with the name of the file.
   * Specify the email subject line as: *Word Count Result*
   * Automatically trigger the function when the text file is uploaded to an **Amazon S3 bucket**.

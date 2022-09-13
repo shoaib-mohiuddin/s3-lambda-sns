@@ -6,7 +6,7 @@
     its required resources.
   * Report the word count in an *email* using an **Amazon Simple Notification Service (SNS)**
     topic. Optionally, also send the result in an *SMS (text)* message.
-  * Format the response message as follows:  
+  * Format the response message as follows:
     ```
     The word count in the file <textFileName> is nnn.  
     ```

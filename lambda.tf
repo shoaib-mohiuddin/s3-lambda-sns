@@ -25,3 +25,11 @@ resource "aws_lambda_function" "lambda_word_count" {
   #   }
   # }
 }
+
+resource "aws_lambda_permission" "allow_bucket" {
+  statement_id  = "AllowS3Invoke"
+  action        = "lambda:InvokeFunction"
+  function_name = aws_lambda_function.lambda_word_count.arn
+  principal     = "s3.amazonaws.com"
+  source_arn    = aws_s3_bucket.word_count_bucket.arn
+}

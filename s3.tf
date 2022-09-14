@@ -16,4 +16,6 @@ resource "aws_s3_bucket_notification" "event_notification" {
     # filter_prefix       = "AWSLogs/"
     # filter_suffix       = ".log"
   }
+
+  depends_on = [aws_lambda_permission.allow_bucket]
 }
